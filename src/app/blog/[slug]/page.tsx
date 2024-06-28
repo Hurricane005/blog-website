@@ -4,7 +4,7 @@ import Image from "next/image";
 import { urlForImage } from "../../../../sanity/lib/image";
 import { PortableText } from "next-sanity";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 async function getData(slug: string) {
   const query = `
