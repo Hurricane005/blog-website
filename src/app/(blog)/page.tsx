@@ -1,5 +1,4 @@
 import { simpleBlogCard } from "@/lib/interface";
-import { client } from "../../sanity/lib/client";
 import {
   Card,
   CardContent,
@@ -8,9 +7,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { urlForImage } from "../../sanity/lib/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { urlForImage } from "../../../sanity/lib/image";
+import { client } from "../../../sanity/lib/client";
 
 async function getData() {
   const query = `
